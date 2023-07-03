@@ -1,0 +1,23 @@
+.navbar{
+    position: fixed;
+    height: 20vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    // background-color: white;
+
+    .section1{
+        height: 60%;
+        width: 100%;
+        display: flex;
+
+    }
+    .section2{
+        height: 40%;
+        width: 100%;
+        display: flex;
+    }
+
+
+}
