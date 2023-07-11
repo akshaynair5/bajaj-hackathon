@@ -12,6 +12,7 @@ function Nifty() {
     { date: '20-09-2003', Close: 2 },
     { date: '20-09-2003', Close: 2 },
     { date: '20-09-2003', Close: 2 }
+
   ];
 
   useEffect(() => {
@@ -19,6 +20,7 @@ function Nifty() {
       .then(response => response.text())
       .then(csvString => {
         const lines = csvString.split('\n');
+
         const headers = lines[0].split(',');
         const jsonData = lines
           .slice(1)
@@ -55,7 +57,7 @@ function Nifty() {
     <div className='nifty'>
       <Navbar />
       <div className='scrips'>
-        <div className='scrip'></div>
+        <div className='scrip'>CDM</div>
       </div>
       {/* <ResponsiveContainer width='100%' aspect={3}>
         <LineChart data={points1}>
